@@ -1,0 +1,487 @@
+/*FORSIDE*/
+.hero {
+  position: relative;
+  height: auto;
+  background-image: linear-gradient(rgba(173, 158, 158, 0.4)),
+    url(images/Streetfood.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+  display: block;
+}
+
+.h1_forside {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 120px;
+  margin: 0;
+  color: rgb(184, 55, 34);
+  text-align: center;
+}
+
+.h3_forside {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 50px;
+  margin: 10px 0 0;
+  color: white;
+  text-align: center;
+}
+
+.tekstfelt {
+  background-color: rgb(197, 225, 242, 0.6);
+  max-width: 1200px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.hero {
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(rgba(173, 158, 158, 0.4)),
+    url(images/Streetfood.webp);
+  background-size: cover;
+  background-position: center;
+  padding-top: 50px;
+}
+
+.globus_knapper {
+  position: absolute;
+  top: 50%; /* midt på hero */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* cirkelstørrelse */
+  height: 400px;
+}
+
+.globus {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: auto;
+  z-index: 1;
+}
+
+/* Knapper i cirkel */
+.globus_knapper button {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  background-color: rgba(197, 225, 242, 0.9);
+  border: 3px solid rgb(184, 55, 34);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* Placer knapperne rundt om globussen */
+.asiatisk {
+  top: 60%;
+  left: 5%;
+}
+.mexicansk {
+  top: 60%;
+  left: 95%;
+}
+.italiensk {
+  top: 120%;
+  left: 105%;
+}
+.mellemøstlig {
+  top: 150%;
+  left: 50%;
+}
+.indsk {
+  top: 120%;
+  left: -5%;
+}
+
+@media (max-width: 800px) {
+  .h1_forside {
+    font-size: 60px;
+  }
+  .h3_forside {
+    font-size: 25px;
+  }
+  .tekstfelt {
+    width: 95%;
+  }
+  .globus {
+    top: 90%;
+    width: 200px;
+    height: auto;
+  }
+  .asiatisk {
+    top: 60%;
+    left: 20%;
+  }
+  .mexicansk {
+    top: 60%;
+    left: 80%;
+  }
+  .italiensk {
+    top: 110%;
+    left: 87%;
+  }
+  .mellemøstlig {
+    top: 125%;
+    left: 50%;
+  }
+  .indsk {
+    top: 110%;
+    left: 13%;
+  }
+}
+/*FORSIDE SLUT*/
+
+/*ASIATISK MAD*/
+.h2_asiatisk {
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 60px;
+  color: rgb(184, 55, 34);
+  text-align: center;
+  margin: 40px;
+}
+
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* tekst */
+.p_beskrivelse {
+  font-family: "Kanit", sans-serif;
+  font-size: 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: 10px auto 0;
+}
+
+.p_titel_kategori {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: rgb(210, 54, 48);
+}
+
+.p_undertitel_kategori {
+  font-family: "Inter", sans-serif;
+  font-size: 27px;
+  color: rgb(219, 78, 78);
+}
+
+.p_prisniveau {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  color: rgb(161, 121, 34);
+  background-color: rgb(249, 336, 5);
+  display: inline-block;
+  padding: 5px 8px;
+  border-radius: 3px;
+}
+
+/* billeder */
+.billede_kategori {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  grid-row: 1/3;
+  grid-column: 1;
+  margin: 10px;
+}
+
+/* baggrund */
+body {
+  background-color: rgb(254, 227, 198);
+}
+
+/* ret */
+.ret {
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  margin-top: 60px;
+  margin-bottom: 50px;
+}
+.ret_link {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.ret_link:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* tekstboks under billede */
+.tekst_boks {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px 30px;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 10px;
+
+  width: 90%;
+  max-width: 900px;
+}
+
+.tekst_boks p {
+  margin: 5px 0;
+}
+
+@media (max-width: 800px) {
+  .grid_1-1-1 {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 30px;
+  }
+  .h2_asiatisk {
+    margin-top: 5rem;
+    margin-bottom: 10px;
+    font: 30px;
+  }
+  .p_beskrivelse {
+    font-size: 15px;
+    max-width: 440px;
+    margin: 0px 15px 5px;
+  }
+  .p_titel_kategori {
+    font-size: 30px;
+  }
+  .p_undertitel_kategori {
+    font-size: 20px;
+  }
+  .p_prisniveau {
+    font-size: 16px;
+  }
+  .tekst_boks {
+    width: 90%;
+    padding: 15px 20px;
+  }
+}
+/*ASIATISK MAD SLUT*/
+
+/* RAMEN - OPSKRIFT*/
+/* Hero billede */
+.hero_opskrift {
+  position: relative;
+  width: 100%;
+  height: 91vh;
+  overflow: hidden;
+}
+
+.billede_opskrift {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(174, 139, 121, 0.4);
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+/* h1 og h2 på hero */
+.h1_opskrift {
+  font-family: "Inter", sans-serif;
+  font-size: 100px;
+  font-weight: bold;
+  color: white;
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+.h2_opskrift {
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+/* pil */
+.pil {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 76px;
+  height: 76px;
+  cursor: pointer;
+}
+
+/* grid 1-2 */
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px; /* lidt afstand mellem bokse */
+  justify-items: start;
+  align-items: start;
+  margin: 20px 0 0 0; /* kun top-margin */
+  padding: 10px;
+}
+
+/* bokse */
+.tid_boks {
+  background: rgba(189, 226, 244, 1);
+  border-radius: 10px;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.pris_boks {
+  background: rgba(189, 226, 244, 1);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* tekst i bokse */
+.p_tid,
+.p_pris {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(210, 62, 48);
+}
+
+.p_min,
+.p_estimeret {
+  font-family: "Inter", sans-serif;
+  font-size: 35px;
+  color: rgb(210, 62, 48);
+}
+
+/* tabel */
+.tabel {
+  margin: 30px;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+.tabel_titel {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  color: rgb(210, 62, 48);
+}
+
+.tabel th,
+.tabel td {
+  text-align: left;
+  padding: 10px 20px;
+}
+
+td,
+th {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+}
+
+th {
+  font-weight: bold;
+}
+
+/* fremgangsmåde */
+.fremgangsmåde {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 50%;
+  margin: 30px;
+  padding-top: 5rem;
+  margin-left: 80px;
+  text-align: start;
+  line-height: 2;
+}
+
+.p_fremgangsmåde {
+  font-family: "Inter", sans-serif;
+  font-size: 30px;
+  line-height: 3rem;
+  margin-bottom: 20px;
+}
+
+.h2_fremgangsmåde {
+  font-family: "Inter", sans-serif;
+  font-size: 50px;
+}
+
+@media (max-width: 800px) {
+  .hero_opskrift {
+    height: 60vh;
+  }
+  .h1_opskrift {
+    font-size: 45px;
+  }
+  .h2_opskrift {
+    font-size: 28px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .pil {
+    display: none;
+  }
+  .tid_boks,
+  .pris_boks {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .p_tid,
+  .p_pris {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .p_min,
+  .p_estimeret {
+    font-size: 18px;
+  }
+  .tabel_titel {
+    font-size: 25px;
+  }
+  td,
+  th {
+    font-size: 18px;
+  }
+  th {
+    margin-top: 10px;
+  }
+
+  .p_fremgangsmåde {
+    font-size: 18px;
+    line-height: 2rem;
+  }
+  .h2_fremgangsmåde {
+    font-size: 28px;
+  }
+  .fremgangsmåde {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
